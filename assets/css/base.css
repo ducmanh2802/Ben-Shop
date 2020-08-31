@@ -1,0 +1,71 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --primary-color: #fe6433;
+  --header-height: 120px;
+  --navbar-height: 34px;
+  --header-with-search-height : calc(var(--header-height) - var(--navbar-height));
+}
+* {
+  box-sizing: inherit;
+  /* inherrit là kế thừa border-box từ thẻ html */
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* 100% tương úng với 16px, ta lấy 62.5 tương đương 10px */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  /* sans=serif là dạng font ko có gạch chân */
+  box-sizing: border-box;
+}
+p {
+  /* 1rem tương đương 10px lấy từ font size từ html */
+  font-size: 1rem;
+}
+.home-product {
+  margin-bottom: 10px;
+}
+/* Respnsive */
+/* grid ->row->column */
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.grid__full-width {
+  width: 100%;
+}
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.grid__column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 16.6667%;
+}
+.grid__column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.3333%;
+}
+.grid__column-2-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
