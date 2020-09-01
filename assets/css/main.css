@@ -381,17 +381,28 @@ i.home-product-item__like-fill {
 }
 
 /* Thiết kế menu đa cấp */
+.category-list {
+  /* width: 100%; */
+}
+.category-item {
+  position: relative;
+}
 .submenu,
 .submenu2 {
+  position: absolute;
   display: none;
   top: 0;
-  left: 0;
-  margin-left: 15px;
-  font-size: 1.4rem;
-  z-index: 1001;
+  left: 150px;
+  font-size: 1.2rem;
+  z-index: 1111;
+  background-color: var(--white-color);
+  width: 150px;
+  border: 1px solid var(--text-color);
 }
 .category-item:hover .submenu {
   display: block;
+  position: relative;
+  top: -30px;
   color: var(--text-color);
 }
 .submenu:hover .category-item__submenu {
@@ -403,6 +414,8 @@ a {
 }
 .submenu:hover .submenu2 {
   display: block;
+  position: relative;
+  top: -30px;
   color: var(--text-color);
 }
 .submenu2:hover a {
