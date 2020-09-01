@@ -385,6 +385,9 @@ i.home-product-item__like-fill {
   /* width: 100%; */
 }
 .category-item {
+  width: 200px;
+  height: 60px;
+  margin: 0 0 2px 0;
   position: relative;
 }
 .submenu,
@@ -397,11 +400,12 @@ i.home-product-item__like-fill {
   z-index: 1111;
   background-color: var(--white-color);
   width: 150px;
-  border: 1px solid var(--text-color);
+  /* border: 1px solid var(--text-color); */
 }
 .category-item:hover .submenu {
   display: block;
   position: relative;
+  height: 40px;
   top: -30px;
   color: var(--text-color);
 }
@@ -415,6 +419,7 @@ a {
 .submenu:hover .submenu2 {
   display: block;
   position: relative;
+  height: 40px;
   top: -30px;
   color: var(--text-color);
 }
