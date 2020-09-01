@@ -375,3 +375,7 @@ i.home-product-item__like-fill {
 .footer__list {
   list-style: none;
 }
+
+.footer__heading > img {
+  width: 50px;
+}
