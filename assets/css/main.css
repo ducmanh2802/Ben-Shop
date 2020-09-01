@@ -397,7 +397,7 @@ i.home-product-item__like-fill {
 .submenu:hover .category-item__submenu {
   color: var(--primary-color);
 }
-.category-item a {
+a {
   text-decoration: none;
   color: var(--text-color);
 }
