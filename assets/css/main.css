@@ -107,7 +107,7 @@
 .header-with-search {
   height: var(--header-with-search-height);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .header-logo {
